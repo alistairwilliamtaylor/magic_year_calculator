@@ -16,7 +16,7 @@ namespace MagicYear
 
             public int MonthlySalary()
             {
-                throw new NotImplementedException("Not implemented yet.");
+                return annualSalary / 12;
             }
         }
 }
