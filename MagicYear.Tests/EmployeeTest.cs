@@ -72,7 +72,7 @@ public class Employee_MonthlySalaryShould
         Assert.Equal(expected, actual);
     }
     [Fact]
-    public void Name_ReturnsFirstAndLastName_WhenBothNamesSuppliedToConstructor()
+    public void Name_ReturnsSpaceSeparatedFirstAndLastName_WhenBothNamesSuppliedToConstructor()
     {
         //Arrange
         var john = new Employee("John", "MacDuff", 60000, 1960);
