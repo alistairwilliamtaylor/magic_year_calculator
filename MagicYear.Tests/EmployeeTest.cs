@@ -17,4 +17,32 @@ public class Employee_MonthlySalaryShould
         //Assert
         Assert.Equal(expected, actual);
     }
+
+    [Fact]
+    public void MonthlySalary_ReturnsRoundNumber_WhenMonthlySalaryRoundedDown()
+    {
+        //Arrange
+        var john = new Employee("John", "MacDuff", 120001, 1960);
+        var expected = 10000;
+
+        //Act
+        var actual = john.MonthlySalary();
+
+        //Assert
+        Assert.Equal(expected, actual);
+    }
+
+    [Fact]
+    public void MonthlySalary_ReturnsRoundNumber_WhenMonthlySalaryRoundedUp()
+    {
+        //Arrange
+        var john = new Employee("John", "MacDuff", 120011, 1960);
+        var expected = 10001;
+
+        //Act
+        var actual = john.MonthlySalary();
+
+        //Assert
+        Assert.Equal(expected, actual);
+    }
 }
