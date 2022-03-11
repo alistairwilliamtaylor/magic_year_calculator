@@ -58,4 +58,17 @@ public class Employee_MonthlySalaryShould
         //Assert
         Assert.Equal(expected, actual);
     }
+    [Fact]
+    public void MagicYear_ReturnsYearStartedPlusSixtyfive_WhenEmployeeSpecifiesStartingYear()
+    {
+        //Arrange
+        var john = new Employee("John", "MacDuff", 60000, 1960);
+        var expected = 2025;
+
+        //Act
+        var actual = john.MagicYear();
+
+        //Assert
+        Assert.Equal(expected, actual);
+    }
 }

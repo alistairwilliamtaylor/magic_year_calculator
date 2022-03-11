@@ -16,8 +16,14 @@ namespace MagicYear
 
             public int MonthlySalary()
             {
-                var salaryFloat = (float)annualSalary;
-                return (int)Math.Round(salaryFloat / 12f, MidpointRounding.AwayFromZero);
+                var monthlySalary = Math.Round((float)annualSalary / 12f, MidpointRounding.AwayFromZero);
+                return (int)monthlySalary;
             }
+
+            public int MagicYear()
+            {
+                throw new NotImplementedException("not implemented yet");
+            }
+
         }
 }
