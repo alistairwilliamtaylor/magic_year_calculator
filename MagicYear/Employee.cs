@@ -16,7 +16,8 @@ namespace MagicYear
 
             public int MonthlySalary()
             {
-                return annualSalary / 12;
+                var salaryFloat = (float)annualSalary;
+                return (int)Math.Round(salaryFloat / 12f);
             }
         }
 }
