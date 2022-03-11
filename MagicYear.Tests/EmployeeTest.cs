@@ -71,4 +71,18 @@ public class Employee_MonthlySalaryShould
         //Assert
         Assert.Equal(expected, actual);
     }
+    [Fact]
+    public void Name_ReturnsFirstAndLastName_WhenBothNamesSuppliedToConstructor()
+    {
+        //Arrange
+        var john = new Employee("John", "MacDuff", 60000, 1960);
+        var expected = "John MacDuff";
+
+        //Act
+        var actual = john.Name;
+
+        //Assert
+        Assert.Equal(expected, actual);
+    }
+
 }

@@ -5,25 +5,24 @@ namespace MagicYear
         {
             public Employee(string firstName, string secondName, int salary, int startingYear)
             {
-                name = firstName + secondName;
-                annualSalary = salary;
-                yearStarted = startingYear;
+                Name = firstName + secondName;
+                AnnualSalary = salary;
+                YearStarted = startingYear;
             }
 
-            private string name;
-            private int annualSalary;
-            private int yearStarted;
+            public string Name {get; private set;}
+            private int AnnualSalary;
+            private int YearStarted;
 
             public int MonthlySalary()
             {
-                var monthlySalary = Math.Round((float)annualSalary / 12f, MidpointRounding.AwayFromZero);
+                var monthlySalary = Math.Round((float)AnnualSalary / 12f, MidpointRounding.AwayFromZero);
                 return (int)monthlySalary;
             }
 
             public int MagicYear()
             {
-                throw new NotImplementedException("not implemented yet");
+                return YearStarted + 65;
             }
-
         }
 }
