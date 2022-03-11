@@ -5,7 +5,7 @@ namespace MagicYear
         {
             public Employee(string firstName, string secondName, int salary, int startingYear)
             {
-                Name = firstName + secondName;
+                Name = firstName + " " + secondName;
                 AnnualSalary = salary;
                 YearStarted = startingYear;
             }
