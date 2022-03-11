@@ -45,4 +45,17 @@ public class Employee_MonthlySalaryShould
         //Assert
         Assert.Equal(expected, actual);
     }
+    [Fact]
+    public void MonthlySalary_RoundsUp_WhenExactlyHalfADollar()
+    {
+        //Arrange
+        var john = new Employee("John", "MacDuff", 120006, 1960);
+        var expected = 10001;
+
+        //Act
+        var actual = john.MonthlySalary();
+
+        //Assert
+        Assert.Equal(expected, actual);
+    }
 }
