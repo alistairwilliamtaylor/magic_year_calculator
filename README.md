@@ -51,7 +51,7 @@ I learned a number of things while creating this project:
 * The basic syntax of writing unit tests using XUnit
 * How to write try/catch blocks and how to throw exceptions
 * The syntax of creating a Dictionary in C#
-* How to use Regex in C# and specifying literal strings with @ symbol
+* How to use Regex in C# and specifying verbatim strings with @ symbol
 
 ## Improvements
 My major areas of growth and questions are:
