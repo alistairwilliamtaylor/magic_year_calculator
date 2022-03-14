@@ -3,6 +3,10 @@ namespace MagicYear
 {
     public class Employee
         {
+            private string FirstName;
+            private string Surname;
+            private int AnnualSalary;
+            private int YearStarted;
             public Employee(string firstName, string surname, int salary, int startingYear)
             {
                 FirstName = firstName;
@@ -10,11 +14,6 @@ namespace MagicYear
                 AnnualSalary = salary;
                 YearStarted = startingYear;
             }
-
-            private string FirstName;
-            private string Surname;
-            private int AnnualSalary;
-            private int YearStarted;
 
             public int MonthlySalary()
             {
