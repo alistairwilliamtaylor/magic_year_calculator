@@ -3,9 +3,9 @@ namespace MagicYear
 {
     public class Employee
         {
-            public Employee(string firstName, string secondName, int salary, int startingYear)
+            public Employee(string firstName, string surname, int salary, int startingYear)
             {
-                Name = firstName + " " + secondName;
+                Name = firstName + " " + surname;
                 AnnualSalary = salary;
                 YearStarted = startingYear;
             }
