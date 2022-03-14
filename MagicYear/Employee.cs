@@ -5,12 +5,14 @@ namespace MagicYear
         {
             public Employee(string firstName, string surname, int salary, int startingYear)
             {
-                Name = firstName + " " + surname;
+                FirstName = firstName;
+                Surname = surname;
                 AnnualSalary = salary;
                 YearStarted = startingYear;
             }
 
-            public string Name {get; private set;}
+            private string FirstName;
+            private string Surname;
             private int AnnualSalary;
             private int YearStarted;
 
@@ -23,6 +25,11 @@ namespace MagicYear
             public int MagicYear()
             {
                 return YearStarted + 65;
+            }
+
+            public string Name()
+            {
+                return FirstName + " " + Surname;
             }
         }
 }

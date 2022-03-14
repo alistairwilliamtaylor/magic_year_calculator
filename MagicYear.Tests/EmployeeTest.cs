@@ -79,7 +79,7 @@ public class Employee_MonthlySalaryShould
         var expected = "John MacDuff";
 
         //Act
-        var actual = john.Name;
+        var actual = john.Name();
 
         //Assert
         Assert.Equal(expected, actual);

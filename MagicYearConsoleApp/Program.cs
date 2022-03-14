@@ -17,6 +17,6 @@ var userEmployee = new Employee(firstName, surname, salary, workStartYear);
 
 System.Console.WriteLine("\nYour magic age details are:\n");
 
-System.Console.WriteLine($"Name: {userEmployee.Name}");
+System.Console.WriteLine($"Name: {userEmployee.Name()}");
 System.Console.WriteLine($"Monthly Salary: {userEmployee.MonthlySalary()}");
 System.Console.WriteLine($"Magic Year: {userEmployee.MagicYear()}");
