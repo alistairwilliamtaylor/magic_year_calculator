@@ -8,7 +8,7 @@ In order to run the program, you will need to have the .NET SDK installed on you
 You can install the .NET SDK using homebrew on the command line: `brew install --cask dotnet-sdk`
 Alternatively, you can download the .NET SDK [here](https://dotnet.microsoft.com/en-us/)
 
-To run the program, use the command `dotnet run` from the CLI when at the root directory of the project
+To run the program, use the command `dotnet run --project MagicYearConsoleApp.csproj` from the CLI when at the root directory of the project
 
 ## Kata Instructions
 
@@ -45,5 +45,17 @@ Magic Year: 2045
 ~~~
 
 ## Solution
+I learned a number of things while creating this project:
+
+* How to set up separate projects for a classlibrary, testing, and console app and to add references between them
+* The basic syntax of writing unit tests using XUnit
+* How to write try/catch blocks and how to throw exceptions
+* The syntax of creating a Dictionary in C#
+* How to use Regex in C# and specifying literal strings with @ symbol
 
 ## Improvements
+My major areas of growth and questions are:
+
+* How best to write tests and testable code around console input and output
+* How best to write and use a static data file e.g. schema for prompts
+* If it is ever advisable to have nested dictionaries and, if not, how better to approach the issue
